@@ -1,0 +1,13 @@
+body {
+    background-color: darkgrey;
+}
+p {
+    color: lightgray;
+
+}
+p.SomeClass {
+    color: yellow;
+}
+h1 {
+    color: white;
+}
