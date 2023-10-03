@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section {
+  display: flex;
+  flex-grow: 1;
+}
+.box {
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+.left {
+ width: 25%;
+ background-color: #F8D11f;
+}
+.center {
+ width: 50%;
+ background-color: #FFFFFF;
+}
+.right {
+ width: 25%;
+ background-color: #9DAEFB;
+}
+header, footer {
+  min-height: 60px;
+}
+header {
+  background-color: lightgreen;
+}
+footer {
+  background-color: lightcoral;
+}
