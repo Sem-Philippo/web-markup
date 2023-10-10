@@ -1,11 +1,10 @@
 section {
   width: 800px;
   height: 800px;
-  border-color: red;
-  border-width: 4px;
-  border-style: solid;
+  border: solid red 4px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 50% auto auto auto;
+  grid-template-rows: 75% auto;
 }
 article {
   background-color: blue;
