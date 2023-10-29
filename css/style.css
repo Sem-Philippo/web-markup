@@ -218,8 +218,8 @@ label.radio {
 .fakeCookies {
   position: absolute;
   width: 100%;
-  border-top: 10px red solid;
-  border-bottom: 10px red solid;
+  border-top: 10px gray solid;
+  border-bottom: 10px gray solid;
   height: 160px;
   background-color: #FFFFFF;
   z-index: 9999;
