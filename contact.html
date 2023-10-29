@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html"><img class="logo" src=".\img\logo.png"></a>
+      <a href="index.html"><img class="logo" src="./img/logo.png" alt="logo of the website"></a>
       <nav>
         <ul class="navigation">
           <li class="sidebuttonleft"><a href="index.html">Home</a></li>
@@ -19,32 +19,30 @@
         </ul>
       </nav>
     </header>
-      <section class="mainHeader">
-        <article class="mainPageBackground playGround">
-          <h1>Contact</h1>
-          <legend>* = required</legend>
-          <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
-            <label for="name">*Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
-
-            <label for="gender">Gender:</label>
-            <input class="radio" type="radio" id="male" name="gender" value="male">
-            <label class="radio" for="male">Male</label>
-            <input class="radio" type="radio" id="female" name="gender" value="female">
-            <label class="radio" for="female">Female</label>
-            <input class="radio" type="radio" id="other" name="gender" value="other">
-            <label class="radio" for="other">Other</label>
-
-            <label for="email">*Email:</label>
-            <input type="email" id="email" name="email" placeholder="name@example.com" required>
-
-            <label class="messageInput" for="message">*Message:</label>
-            <textarea class="messageInput" id="message" name="message" rows="11" cols="70" placeholder="Message" required></textarea>
-
-            <input class="submitButton" type="submit" value="Submit">
-          </form>
-        </article>
-      </section>
+    <section class="mainPageBackground playGround">
+      <h1>Contact</h1>
+      <legend>* = required</legend>
+      <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
+        <label for="name">*Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <label for="gender">Gender:</label>
+        <input class="radio" type="radio" id="male" name="gender" value="male">
+        <label class="radio" for="male">Male</label>
+        <input class="radio" type="radio" id="female" name="gender" value="female">
+        <label class="radio" for="female">Female</label>
+        <input class="radio" type="radio" id="other" name="gender" value="other">
+        <label class="radio" for="other">Other</label>
+        <label for="email">*Email:</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+        <label class="messageInput" for="message">*Message:</label>
+        <textarea class="messageInput" id="message" name="message" rows="11" cols="70" placeholder="Message" required></textarea>
+        <input class="submitButton" type="submit" value="Submit">
+      </form>
+    </section>
+    <section class="fakeCookies">
+      <h2>Cookies?</h2>
+      <h3>I have no idea how to remove this, so it is here because of the free space</h3>
+    </section>
     <footer class="footer">
       <p>&copy; 2023 Sem Philippo</p>
       <a href="#" class="contactLink">Contact</a>

@@ -16,7 +16,6 @@ h1 {
   font-weight: bold;
   /* i have no reason to place these anywhere else i dont think? */
   letter-spacing: normal;
-  text-indent: 0;
   word-spacing: normal;
 }
 h1::first-letter {
@@ -121,7 +120,8 @@ ul.navigation li:active {
 
 .backgroundImage {
   position:relative;
-  width: 100vw;
+  /* 100vw is bigger than the viewport somehow */
+  width: 100%;
   height: 100vh;
 }
 .mainPageBackground.homePage {
@@ -131,18 +131,18 @@ ul.navigation li:active {
   background-color: #B2B6BD;
   border: solid #A2A6AD 5px;
   left: 15vw;
-  bottom: -114px;
+  bottom: -99px;
 }
 .mainPageBackground.playGround {
   position:relative;
   width:100%;
-  height:100%;
+  height:100vh;
   background-color: #B2B6BD;
 }
 .mainPageBackground > *{
   padding: 10px 10px 0px 10px;
   margin: 0px;
-  width:100%;
+  width:80vw;
 }
 
 ol.info {
@@ -214,6 +214,19 @@ label.radio {
 .submitButton {
   position: relative;
   bottom: 210px;
+}
+.fakeCookies {
+  position: absolute;
+  width: 100%;
+  border-top: 10px red solid;
+  border-bottom: 10px red solid;
+  height: 160px;
+  background-color: #FFFFFF;
+  z-index: 9999;
+  bottom:-99px;
+}
+.fakeCookies>* {
+  text-indent: 10px;
 }
 
 /* using parent to increase importance (so it actually happens) */
