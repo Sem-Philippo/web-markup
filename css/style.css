@@ -1,245 +1,262 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani&family=Libre+Franklin&family=Strait&display=swap');
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width:769px) {
+  body {
+    margin: 0px;
+    background-color: #FFFFFF;
+  }
+  h1 {
+    font-family: 'strait';
+    /* for some reason my browser (edge) made it 1.17em so to make sure it is correct for everyone, i am putting the base values here */
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    /* i have no reason to place these anywhere else i dont think? */
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+  h1::first-letter {
+    /*i know this is kind of unfair, but the 1st letter of the homepage h1 just is lowercase*/
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: 'libre franklin';
+    /* same here */
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+  h3, p {
+    font-family: 'biryani';
+  }
+  .mainPageText {
+    display: block;
+  }
+  .mainHeader {
+    height: 100vh;
+    width: 100vw;
+  }
+  .header {
+    background-color: white;
+    height: 99.200px;
+  }
+  .footer {
+    background-color: #FFFFFF;
+    height: 4em;
+  }
+  .footer > * {
+    line-height: 400%;
+    position:relative;
+  }
+  .footer > p {
+    margin: 0px;
+    float: left;
+    width:60vw;
+  }
+  .footer > .contactLink {
+    float: right;
+    padding: 0px 1em;
+  }
+  .logo {
+    float:left;
+    height:6em;
+    width:6em;
+  }
+  ul.navigation {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  ul.navigation li.selected {
+    border-bottom: blue 3px solid;
+  }
+  /* i dont know if this counts, but i had no idea what to put inside of the table, so i just colored the navigation a bit differently */
+  ul.navigation >*:nth-child(odd) {
+    background-color: #FFFFFF;
+  }
+  ul.navigation >*:nth-child(even) {
+    background-color: #EEEEEE;
+  }
 
-}
-body {
-  margin: 0px;
-  background-color: #FFFFFF;
-}
-h1 {
-  font-family: 'strait';
-  /* for some reason my browser (edge) made it 1.17em so to make sure it is correct for everyone, i am putting the base values here */
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  /* i have no reason to place these anywhere else i dont think? */
-  letter-spacing: normal;
-  word-spacing: normal;
-}
-h1::first-letter {
-  /*i know this is kind of unfair, but the 1st letter of the homepage h1 just is lowercase*/
-  text-transform: uppercase;
-}
-h2 {
-  font-family: 'libre franklin';
-  /* same here */
-  display: block;
-  font-size: 1.5em;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-h3, p {
-  font-family: 'biryani';
-}
-.mainPageText {
-  display: block;
-}
-.mainHeader {
-  height: 100vh;
-  width: 100vw;
-}
-.header {
-  background-color: white;
-  height: 99.200px;
-}
-.footer {
-  background-color: #FFFFFF;
-  height: 4em;
-}
-.footer > * {
-  line-height: 400%;
-  position:relative;
-}
-.footer > p {
-  margin: 0px;
-  float: left;
-  width:60vw;
-}
-.footer > .contactLink {
-  float: right;
-  padding: 0px 1em;
-}
-.logo {
-  float:left;
-  height:6em;
-  width:6em;
-}
-ul.navigation {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  align-items: center;
-  margin: 0px;
-  padding: 0px;
-}
-ul.navigation li.selected {
-  border-bottom: blue 3px solid;
-}
-/* i dont know if this counts, but i had no idea what to put inside of the table, so i just colored the navigation a bit differently */
-ul.navigation >*:nth-child(odd) {
-  background-color: #FFFFFF;
-}
-ul.navigation >*:nth-child(even) {
-  background-color: #EEEEEE;
-}
+  ul.navigation li {
+    width: 20%;
+    height: 6em;
+    padding: 0px 10px;
+    text-align: center;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom: lightblue 3px solid;
+  }
+  ul.navigation a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 100px; 
+    font-size: 24px;
+    font-family: 'biryani';
+    color:black;
+    text-decoration: none;
+  }
+  /* make nav item darker on hover to show selection */
+  ul.navigation li:hover {
+    background-color: #BCBCBC;
+    border-bottom-color: rgb(119, 189, 236);
+  }
+  ul.navigation li:active {
+    background-color: #ABABAB;
+    border-bottom-color: rgb(119, 189, 236);
+  }
 
-ul.navigation li {
-  width: 20%;
-  height: 6em;
-  padding: 0px 10px;
-  text-align: center;
-  border-color: grey;
-  border-width: 1px;
-  border-style: solid;
-  border-bottom: lightblue 3px solid;
-}
-ul.navigation a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 100px; 
-  font-size: 24px;
-  font-family: 'biryani';
-  color:black;
-  text-decoration: none;
-}
-/* make nav item darker on hover to show selection */
-ul.navigation li:hover {
-  background-color: #BCBCBC;
-  border-bottom-color: rgb(119, 189, 236);
-}
-ul.navigation li:active {
-  background-color: #ABABAB;
-  border-bottom-color: rgb(119, 189, 236);
-}
+  .backgroundImage {
+    position:relative;
+    /* 100vw is bigger than the viewport somehow */
+    width: 100%;
+    height: 100vh;
+  }
+  .mainPageBackground.homePage {
+    position:absolute;
+    width:70vw;
+    height:70vh;
+    background-color: #B2B6BD;
+    border: solid #A2A6AD 5px;
+    left: 15vw;
+    bottom: -99px;
+  }
+  .mainPageBackground.playGround {
+    position:relative;
+    width:100%;
+    height:100vh;
+    background-color: #B2B6BD;
+  }
+  .mainPageBackground > *{
+    text-indent: 10px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
 
-.backgroundImage {
-  position:relative;
-  /* 100vw is bigger than the viewport somehow */
-  width: 100%;
-  height: 100vh;
-}
-.mainPageBackground.homePage {
-  position:absolute;
-  width:70vw;
-  height:70vh;
-  background-color: #B2B6BD;
-  border: solid #A2A6AD 5px;
-  left: 15vw;
-  bottom: -99px;
-}
-.mainPageBackground.playGround {
-  position:relative;
-  width:100%;
-  height:100vh;
-  background-color: #B2B6BD;
-}
-.mainPageBackground > *{
-  text-indent: 10px;
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-}
+  ol.info {
+    padding:0px 0px 0px 30px;
+  }
 
-ol.info {
-  padding:0px 0px 0px 30px;
-}
+  ol.info h3 {
+    padding: 0px 0px 0px 10px;
+  }
+  ol.info {
+    width: 50%;
+  }
+  ol.info li > * {
+    margin:5px;
+  }
+  ul.info {
+    padding: 0px 0px 0px 10px;
+  }
+  ul > h2 {
+    margin: 0px;
+  }
+  .imageTest, .detailPageImage, .detailPageImageCaption {
+    padding: 0px;
+    position: absolute;
+    right: 5.5vw;
+    float: right;
+    width: auto; 
+    height: auto;
+    max-width: 45vw;
+    max-height: 45vh;
+  }
+  .imageTest, .detailPageImage {
+    top: 5.5vh;
+  }
+  .detailPageImageCaption {
+    top: 45.5vh;
+  }
+  .imageTest2, .detailPageImage2 {
+    padding: 0px;
+    position: absolute;
+    top: 38.5vh;
+    right: 22vw;
+    float: right;
+    width: auto; 
+    height: auto;
+    max-width: 45vw;
+    max-height: 45vh;
+  }
+  .imageTest:hover, .imageTest2:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+  }
 
-ol.info h3 {
-  padding: 0px 0px 0px 10px;
-}
-ol.info {
-  width: 50%;
-}
-ol.info li > * {
-  margin:5px;
-}
-ul.info {
-  padding: 0px 0px 0px 10px;
-}
-ul > h2 {
-  margin: 0px;
-}
-.imageTest, .detailPageImage, .detailPageImageCaption {
-  padding: 0px;
-  position: absolute;
-  right: 5.5vw;
-  float: right;
-  width: 35%; 
-  height: 40%;
-}
-.imageTest, .detailPageImage {
-  top: 5.5vh;
-}
-.detailPageImageCaption {
-  top: 45.5vh;
-}
-.imageTest2, .detailPageImage2 {
-  padding: 0px;
-  position: absolute;
-  top: 38.5vh;
-  right: 22vw;
-  float: right;
-  width: 35%; 
-  height: 40%;
-}
-.imageTest:hover, .imageTest2:hover {
-  background-color: rgba(200, 200, 200, 0.2);
-}
+  input, textarea, label {
+    display: block;
+    margin: 10px 5px;
+    padding: 5px;
+  }
+  label.radio, input.radio {
+    display: inline;
+    padding: 10px 0px;
+  }
+  input.radio {
+    margin: 2px 5px;
+  }
+  label.radio {
+    margin: 0px;
+  }
+  .messageInput {
+    position: relative;
+    bottom: 225px;
+    left: 230px;
+  }
+  .submitButton {
+    position: relative;
+    bottom: 210px;
+  }
+  .fakeCookies {
+    position: absolute;
+    width: 100%;
+    border-top: 10px gray solid;
+    border-bottom: 10px gray solid;
+    height: 160px;
+    background-color: #FFFFFF;
+    z-index: 9999;
+    bottom:-114px;
+  }
+  .fakeCookies>* {
+    text-indent: 10px;
+  }
 
-input, textarea, label {
-  display: block;
-  margin: 10px 5px;
-  padding: 5px;
+  /* using parent to increase importance (so it actually happens) */
+  ul.navigation li.sidebuttonleft {
+    border-left-width: 1.6px;
+  }
+  ul.navigation li.sidebuttonright {
+    border-right-width: 1.6px;
+  }
+  fieldset {
+    border: none;
+  }
+  .phoneMessage {
+    display:none;
+  }
 }
-label.radio, input.radio {
-  display: inline;
-  padding: 10px 0px;
-}
-input.radio {
-  margin: 2px 5px;
-}
-label.radio {
-  margin: 0px;
-}
-.messageInput {
-  position: relative;
-  bottom: 225px;
-  left: 230px;
-}
-.submitButton {
-  position: relative;
-  bottom: 210px;
-}
-.fakeCookies {
-  position: absolute;
-  width: 100%;
-  border-top: 10px gray solid;
-  border-bottom: 10px gray solid;
-  height: 160px;
-  background-color: #FFFFFF;
-  z-index: 9999;
-  bottom:-114px;
-}
-.fakeCookies>* {
-  text-indent: 10px;
-}
-
-/* using parent to increase importance (so it actually happens) */
-ul.navigation li.sidebuttonleft {
-  border-left-width: 1.6px;
-}
-ul.navigation li.sidebuttonright {
-  border-right-width: 1.6px;
-}
-fieldset {
-  border: none;
+@media screen and (max-width:768px){
+  body {
+    background-color: beige;
+  }
+  body * {
+    display:none;
+  }
+  body > .phoneMessage {
+    display:inline;
+  }
 }
