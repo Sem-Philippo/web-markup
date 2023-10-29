@@ -1,0 +1,5 @@
+Student name: Sem Philippo 
+Student number: 717860
+Student class: HAITFT1C
+GitHub Repository: https://github.com/Sem-Philippo/web-markup
+GitHub Pages URL: https://sem-philippo.github.io/web-markup/index.html
