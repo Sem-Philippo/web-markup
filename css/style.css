@@ -131,7 +131,7 @@ ul.navigation li:active {
   background-color: #B2B6BD;
   border: solid #A2A6AD 5px;
   left: 15vw;
-  bottom:-114px;
+  bottom: -114px;
 }
 .mainPageBackground.playGround {
   position:relative;
