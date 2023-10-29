@@ -14,6 +14,13 @@ h1 {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  /* i have no reason to place these anywhere else i dont think? */
+  letter-spacing: normal;
+  text-indent: 0;
+  word-spacing: normal;
+}
+h1::first-letter {
+  text-transform: uppercase;
 }
 h2 {
   font-family: 'libre franklin';
@@ -26,7 +33,7 @@ h2 {
   margin-right: 0;
   font-weight: bold;
 }
-h3 {
+h3, p {
   font-family: 'biryani';
 }
 .mainPageText {
@@ -79,7 +86,9 @@ ul.navigation li {
   height: 6em;
   padding: 0px 10px;
   text-align: center;
-  border: grey 1px solid;
+  border-color: grey;
+  border-width: 1px;
+  border-style: solid;
   border-bottom: lightblue 3px solid;
 }
 ul.navigation a {
@@ -97,6 +106,11 @@ ul.navigation li:hover {
   background-color: #BCBCBC;
   border-bottom-color: rgb(119, 189, 236);
 }
+ul.navigation li:active {
+  background-color: #ABABAB;
+  border-bottom-color: rgb(119, 189, 236);
+}
+
 .backgroundImage {
   position:absolute;
   width: 100vw;
@@ -143,14 +157,19 @@ ul.info {
 ul > h2 {
   margin: 0px;
 }
-.imageTest, .detailPageImage {
+.imageTest, .detailPageImage, .detailPageImageCaption {
   padding: 0px;
   position: absolute;
-  top: 5.5vh;
   right: 5.5vw;
   float: right;
   width: 35%; 
   height: 40%;
+}
+.imageTest, .detailPageImage {
+  top: 5.5vh;
+}
+.detailPageImageCaption {
+  top: 45.5vh;
 }
 .imageTest2, .detailPageImage2 {
   padding: 0px;
