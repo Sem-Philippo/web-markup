@@ -45,6 +45,7 @@
   }
   .mainPageBackground > p.mainPageText, .mainPageBackground > h2.mainPageText {
     width:100%;
+    max-width: 68vw;
   }
   .mainHeader {
     height: 100vh;
