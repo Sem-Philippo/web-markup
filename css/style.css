@@ -20,6 +20,7 @@ h1 {
   word-spacing: normal;
 }
 h1::first-letter {
+  /*i know this is kind of unfair, but the 1st letter of the homepage h1 just is lowercase*/
   text-transform: uppercase;
 }
 h2 {
@@ -80,8 +81,15 @@ ul.navigation {
 ul.navigation li.selected {
   border-bottom: blue 3px solid;
 }
-ul.navigation li {
+/* i dont know if this counts, but i had no idea what to put inside of the table, so i just colored the navigation a bit differently */
+ul.navigation >*:nth-child(odd) {
   background-color: #FFFFFF;
+}
+ul.navigation >*:nth-child(even) {
+  background-color: #EEEEEE;
+}
+
+ul.navigation li {
   width: 20%;
   height: 6em;
   padding: 0px 10px;
@@ -122,7 +130,6 @@ ul.navigation li:active {
   height:70vh;
   background-color: #B2B6BD;
   border: solid #A2A6AD 5px;
-  border-bottom-color: #B2B6BD;
   left: 15%;
   top:28.7%;
 }
