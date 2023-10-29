@@ -186,14 +186,16 @@
     background-color: rgba(200, 200, 200, 0.2);
   }
 
-  input, textarea, label {
+  .mainPageBackground input, .mainPageBackground textarea, .mainPageBackground label {
     display: block;
     margin: 10px 5px;
     padding: 5px;
+    width: 25vw;
   }
   label.radio, input.radio {
     display: inline;
     padding: 10px 0px;
+    width: auto;
   }
   input.radio {
     margin: 2px 5px;
@@ -203,12 +205,14 @@
   }
   .messageInput {
     position: relative;
-    bottom: 225px;
-    left: 230px;
+    bottom: 262px;
+    left: 28vw;
   }
-  .submitButton {
-    position: relative;
-    bottom: 210px;
+  textarea.messageInput {
+    height: 163px;
+  }
+  input.submitButton {
+    width:10vw;
   }
   .fakeCookies {
     position: absolute;
