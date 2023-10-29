@@ -37,10 +37,13 @@
   h3, p {
     font-family: 'biryani';
   }
+  em.emClass, strong.strongClass {
+    padding: 0px;
+  }
   .mainPageText {
     display: block;
   }
-  .mainPageBackground > p.mainPageText {
+  .mainPageBackground > p.mainPageText, .mainPageBackground > h2.mainPageText {
     width:100%;
   }
   .mainHeader {
@@ -143,29 +146,13 @@
     height:100vh;
     background-color: #B2B6BD;
   }
-  .mainPageBackground > *{
+  .mainPageBackground *{
     text-indent: 0px;
     padding: 0px 10px;
     margin: 0px;
-    width: 100%;
-  }
-  .mainPageBackground > p {
-    width:40%
+    width: 40vw;
   }
 
-  ol.info {
-    padding:0px 0px 0px 30px;
-  }
-
-  ol.info h3 {
-    padding: 0px 0px 0px 10px;
-  }
-  ol.info {
-    width: 40%;
-  }
-  ol.info li > * {
-    margin:5px;
-  }
   ul.info {
     padding: 0px 0px 0px 10px;
   }
@@ -184,7 +171,7 @@
     top: 5.5vh;
   }
   .detailPageImageCaption {
-    top: 45.5vh;
+    top: 52vh;
   }
   .imageTest2, .detailPageImage2 {
     padding: 0px;
