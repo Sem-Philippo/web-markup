@@ -142,7 +142,7 @@ ul.navigation li:active {
 .mainPageBackground > *{
   padding: 10px 10px 0px 10px;
   margin: 0px;
-  width:80vw;
+  width: 100%;
 }
 
 ol.info {
@@ -235,4 +235,7 @@ ul.navigation li.sidebuttonleft {
 }
 ul.navigation li.sidebuttonright {
   border-right-width: 1.6px;
+}
+fieldset {
+  border: none;
 }
