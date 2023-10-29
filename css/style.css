@@ -223,7 +223,7 @@ label.radio {
   height: 160px;
   background-color: #FFFFFF;
   z-index: 9999;
-  bottom:-99px;
+  bottom:-114px;
 }
 .fakeCookies>* {
   text-indent: 10px;
