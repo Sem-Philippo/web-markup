@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supermarkets Vondelkwartier</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><img class="logo" src=".\img\logo.png"></a>
+      <nav>
+        <ul class="navigation">
+          <li class="sidebuttonleft"><a href="index.html">Home</a></li>
+          <li><a href="playgrounds.html">Playgrounds</a></li>
+          <li><a href="schools.html">Schools</a></li>
+          <li><a href="supermarkets.html">Supermarkets</a></li>
+          <li class="sidebuttonright"><a href="nature.html">Nature</a></li>
+        </ul>
+      </nav>
+    </header>
+      <section class="mainHeader">
+        <article class="mainPageBackground playGround">
+          <h1>Contact</h1>
+          <p>* = required</p>
+          <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
+            <label for="name">*Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <label for="gender">Gender:</label>
+            <input class="radio" type="radio" id="male" name="gender" value="male">
+            <label class="radio" for="male">Male</label>
+            <input class="radio" type="radio" id="female" name="gender" value="female">
+            <label class="radio" for="female">Female</label>
+            <input class="radio" type="radio" id="other" name="gender" value="other">
+            <label class="radio" for="other">Other</label>
+
+            <label for="email">*Email:</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+            <label class="messageInput" for="message">*Message:</label>
+            <textarea class="messageInput" id="message" name="message" rows="11" cols="70" placeholder="Message" required></textarea>
+
+            <input class="submitButton" type="submit" value="Submit">
+          </form>
+        </article>
+      </section>
+    <footer class="footer">
+      <p>&copy; 2023 Sem Philippo</p>
+      <a href="#" class="contactLink">Contact</a>
+    </footer>
+  </body>
+</html>
