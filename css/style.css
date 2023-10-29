@@ -40,6 +40,9 @@
   .mainPageText {
     display: block;
   }
+  .mainPageBackground > p.mainPageText {
+    width:100%;
+  }
   .mainHeader {
     height: 100vh;
     width: 100vw;
@@ -141,10 +144,13 @@
     background-color: #B2B6BD;
   }
   .mainPageBackground > *{
-    text-indent: 10px;
-    padding: 0px;
+    text-indent: 0px;
+    padding: 0px 10px;
     margin: 0px;
     width: 100%;
+  }
+  .mainPageBackground > p {
+    width:40%
   }
 
   ol.info {
@@ -155,7 +161,7 @@
     padding: 0px 0px 0px 10px;
   }
   ol.info {
-    width: 50%;
+    width: 40%;
   }
   ol.info li > * {
     margin:5px;
@@ -169,12 +175,10 @@
   .imageTest, .detailPageImage, .detailPageImageCaption {
     padding: 0px;
     position: absolute;
-    right: 5.5vw;
+    right: 5.5vh;
     float: right;
-    width: auto; 
-    height: auto;
-    max-width: 45vw;
-    max-height: 45vh;
+    width:45vw;
+    height:45vh;
   }
   .imageTest, .detailPageImage {
     top: 5.5vh;
@@ -185,13 +189,11 @@
   .imageTest2, .detailPageImage2 {
     padding: 0px;
     position: absolute;
-    top: 38.5vh;
-    right: 22vw;
+    top: 32.5vh;
+    right: 22.5vh;
     float: right;
-    width: auto; 
-    height: auto;
-    max-width: 45vw;
-    max-height: 45vh;
+    width: 45vw;
+    height: 45vh;
   }
   .imageTest:hover, .imageTest2:hover {
     background-color: rgba(200, 200, 200, 0.2);
