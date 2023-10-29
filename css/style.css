@@ -2,7 +2,7 @@
 
 body {
   margin: 0px;
-  background-color: lightgrey;
+  background-color: #FFFFFF;
 }
 h1 {
   font-family: 'strait';
@@ -120,18 +120,18 @@ ul.navigation li:active {
 }
 
 .backgroundImage {
-  position:absolute;
+  position:relative;
   width: 100vw;
   height: 100vh;
 }
 .mainPageBackground.homePage {
-  position:relative;
+  position:absolute;
   width:70vw;
   height:70vh;
   background-color: #B2B6BD;
   border: solid #A2A6AD 5px;
-  left: 15%;
-  top:28.7%;
+  left: 15vw;
+  bottom:-114px;
 }
 .mainPageBackground.playGround {
   position:relative;
